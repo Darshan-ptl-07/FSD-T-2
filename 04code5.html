@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <style>
+            .outer{
+                display: grid;
+                background-color: rgb(206, 39, 10);
+                padding: 15px;
+                grid-template-columns: 200px 1fr 2fr;
+                grid-template-rows: 1fr 2fr;
+                gap: 10px;
+                }
+            .inner{
+                display: inline-block;
+                background-color:cyan ; 
+                margin: 10px ; 
+                content: center ; 
+                padding: 10px;
+            }
+            .inner:nth-child(2){order: 1;flex : 1 1 10px}
+        </style>
+    </head>
+    <body>
+        <div class="outer">
+            <div class="inner">Box1</div>
+            <div class="inner">Box2</div>
+            <div class="inner">Box3</div>
+            <div class="inner">Box4</div>
+            <div class="inner">Box5</div>
+    </div>
+    </body>
+</html>

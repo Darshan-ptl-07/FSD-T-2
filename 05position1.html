@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <style>
+            .container{
+                border: 1px solid red;
+                margin-top: 50px; height: 800px;
+                position: relative;
+            }
+            .test{
+                border: 1px solid purple; text-align: center;
+                height: 100px; width: 100px; margin-left: 20px;
+            }
+            #a{background-color: tomato;top: 50px; left: 100px;}
+            #b{background-color: cyan;position: relative; top: 20px; left: 30px;}
+            #c{background-color: yellow;position: absolute;top: 20px; left: 30px; z-index: -1;}
+            #d{background-color: pink;position: fixed;top: 0px; right: 20px;}
+            #e{background-color: springgreen;position: sticky;top: 200px;}
+            
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="test" id="a">1</div>
+            <div class="test" id="b">2</div>
+            <div class="test" id="c">3</div>
+            <div class="test" id="d">4</div>
+            <div class="test" id="e">5</div>
+        </div>
+    </body>
+</html>

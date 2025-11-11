@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <style>
+            .outer{
+                display:flex ; 
+                background-color: darkred ; 
+                height: 250px ; 
+                flex-direction: row ; 
+                justify-content: center ;
+                align-items: center ; 
+                gap: 10px ; 
+                flex-wrap:nowrap ;
+                padding: 5px;}
+            .inner{
+                display: inline-block;
+                width : 200px;
+                background-color:cyan ; 
+                margin: 10px ; 
+                content: center ; 
+                padding: 10px;
+            }
+            .inner:nth-child(2){order: 1;flex : 1 1 10px}
+        </style>
+    </head>
+    <body>
+        <div class="outer">
+            <div class="inner">Box1</div>
+            <div class="inner">Box2</div>
+            <div class="inner">Box3</div>
+    </div>
+    <h1>observe me at display none.</h1>
+    </body>
+</html>
